@@ -1,0 +1,25 @@
+{
+    "name": "test_flask_api",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "context": ".."
+    },
+    "settings": {
+        "terminal.integrated.profiles.linux": {
+            "bash (login)": {
+                "path": "bash",
+                "args": [
+                    "-l"
+                ]
+            }
+        }
+    },
+    "extensions": [
+        "ms-python.python",
+        "ms-python.vscode-pylance",
+        "ms-toolsai.jupyter",
+        "VisualStudioExptTeam.vscodeintellicode",
+        "njpwerner.autodocstring"
+    ],
+    "postCreateCommand": "poetry install"
+}
